@@ -70,7 +70,7 @@ function calcModulScalarAndErrorEstimate(elementsVector, coefficientVector) {
     }
     nuModul *= u
     nuModul /= (1 - (2 * (n) + 1) * u)
-    cx = (s1 + nuModul) * gamma(n) // |cx - c^x^|
+    cx = (s1 + nuModul) * gamma((4 * n) - 2) // |cx - c^x^|
 
     return cx;
 }
